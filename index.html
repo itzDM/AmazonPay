@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Pay</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("image/pick2.png");
+            object-fit: cover;
+        }
+
+        /* Navbar start*/
+        .navbar {
+            position: absolute;
+            width: 100%;
+            height: 65px;
+        }
+
+        .navbar .logo {
+            position: absolute;
+            width: 272px;
+            height: 77px;
+            left: 33px;
+            top: 7px;
+        }
+
+        .navbar #logo img {
+            position: absolute;
+            width: 156px;
+            height: 43px;
+            left: 33px;
+            top: 17px;
+        }
+
+
+        ul {
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .item1 {
+            position: absolute;
+            left: 675px;
+            top: 14px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 34px;
+            text-decoration: none;
+            /* identical to box height */
+            color: #000000;
+        }
+
+        .item1:hover {
+            color: rgb(74, 8, 255);
+
+        }
+
+        .item2 {
+            position: absolute;
+            left: 1360px;
+            top: 9px;
+        }
+
+        .item3 {
+            position: absolute;
+            width: 57px;
+            height: 68px;
+            left: 1450px;
+            top: 11px;
+        }
+
+        .navbar ul img {
+            height: 43px;
+            width: 42px;
+        }
+
+        /* Navbar end*/
+
+
+        /*Left item start*/
+
+
+
+        #avtar img {
+            position: absolute;
+            left: 60px;
+            top: 100px;
+        }
+
+        .litem {
+            display: inline;
+            position: absolute;
+            top: 235px;
+            left: 25px;
+            line-height: 75px;
+        }
+
+        .litem img {
+            height: 55px;
+        }
+
+        /*Left item End*/
+
+
+        /*Content Start*/
+        .content {
+            position: absolute;
+            left: 304px;
+        }
+
+        .section1 {
+            position: absolute;
+            width: 580px;
+            height: 280px;
+            left: 13px;
+            top: 95px;
+        }
+
+        .section2 {
+            position: absolute;
+            width: 524px;
+            height: 280px;
+            left: 665px;
+            top: 95px;
+        }
+
+        .section3 {
+            position: absolute;
+            width: 580px;
+            height: 280px;
+            left: 13px;
+            top: 410px;
+        }
+
+        .section4 {
+            position: absolute;
+            width: 524px;
+            height: 280px;
+            left: 665px;
+            top: 410px;
+        }
+
+
+        img:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        .secitm1 img,
+        .secitm2 img,
+        .section3 img,
+        .section4 img {
+            position: relative;
+            height: 75px;
+            padding-inline: 30px 25px;
+            padding-top: 20px;
+        }
+
+        .section1 h2,
+        .section2 h2 {
+            margin: 25px 135px;
+        }
+
+        .section3 h2,
+        .section4 h2 {
+            margin: 25px 180px;
+        }
+        
+        .warring{
+            display: none;
+        }
+
+
+        /*Content End*/
+
+
+        /*Animation*/
+
+        .litem {
+            animation: fadein 1000ms forwards;
+            opacity: 0;
+            animation-delay: 1500ms;
+
+        }
+
+        @keyframes fadein {
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        @media screen and (max-width: 940px) {
+            body {
+                background: rgba(37, 29, 49, 0.747)
+            }
+
+            .header-Content {
+                display: none;
+            }
+
+            .warring {
+                display: flex;
+                font-weight: 100;
+                color: #ffffff;
+                flex-direction: column;
+            }
+            .warring a{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warring">
+        <h1>This Site is Not Responsive, So For Better View Please Use Desktop Or Download Site Image.-</h1>
+        <a href="./image/pay.PNG" download="amazonpay"> <input type="button" value="Download Image"></a>
+    </div>
+
+    <div class="header-Content">
+        <!-- NAv bar -->
+        <nav class="navbar">
+            <div id="logo">
+                <a href="""><img src=" image/amazonpay.svg" alt=""></a>
+            </div>
+            <ul>
+                <li> <a href="" class="item1"> Wallet Balance: Rs. 0.00 </a></li>
+                <li><a href="" class="item2">
+                        <img src="image/bell.svg" alt="">
+                    </a></li>
+                <li><a href="" class="item3"><img src="image/Group 3.svg" alt=""></a></li>
+            </ul>
+
+        </nav>
+
+        <!-- End of navbar -->
+
+
+        <!-- left component -->
+        <div class="left">
+            <div id="avtar">
+                <a href=""><img src="image/avtar1svg.svg" alt=""></a>
+            </div>
+            <ul class="litem">
+                <li><a href=""><img src="image/account.svg" alt=""></a></li>
+                <li><a href=""><img src="image/history.svg" alt=""></a></li>
+                <li><a href=""><img src="image/reward.svg" alt="" style="position: relative;left: 7px;"></a></li>
+                <li><a href=""><img src="image/balance.svg" alt="" style="position: relative;left: -4px;"></a></li>
+                <li><a href=""><img src="image/setting.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+
+        <!-- Content aria -->
+
+        <div class="content">
+
+            <div class="section1">
+                <h2>Recharge And Bill Payment </h2>
+                <div class="secitm1">
+                    <a href=""><img src="image/Group 1.svg" alt=""></a>
+                    <a href=""><img src="image/electri.svg" alt=""></a>
+                    <a href=""><img src="image/Dth.svg" alt=""></a>
+                    <a href=""><img src="image/Cable.svg" alt=""></a>
+                    <a href=""><img src="image/Gas.svg" alt=""></a>
+                    <a href=""><img src="image/Water.svg" alt="" style="left: 15px;"></a>
+                    <a href=""><img src="image/education.svg" alt="" style="left: 25px;"></a>
+                    <a href=""><img src="image/Fast.svg" alt="" style="left: 30px;"></a>
+                </div>
+
+            </div>
+
+
+            <div class="section2">
+                <h2>Travel And Insurance </h2>
+                <div class="secitm2">
+                    <a href=""><img src="image/train.svg" alt=""></a>
+                    <a href=""><img src="image/flight.svg" alt=""></a>
+                    <a href=""><img src="image/bus.svg" alt=""></a>
+                    <a href=""><img src="image/Family.svg" alt=""></a>
+                    <a href=""><img src="image/car.svg" alt=""></a>
+                    <a href=""><img src="image/bike.svg" alt=""></a>
+                    <a href=""><img src="image/heal.svg" alt=""></a>
+                    <a href=""><img src="image/Home.svg" alt=""></a>
+                </div>
+
+            </div>
+
+            <div class="section3">
+                <h2>Pay Offer </h2>
+                <div class="secitm3">
+                    <a href=""><img src="image/alloffer.svg" alt=""></a>
+                    <a href=""><img src="image/food.svg" alt=""></a>
+                    <a href=""><img src="image/travel.svg" alt=""></a>
+                    <a href=""><img src="image/enter.svg" alt=""></a>
+                    <a href=""><img src="image/shop.svg" alt="" style="width: 57px; height: 61px;"></a>
+                    <a href=""><img src="image/rech.svg" alt=""></a>
+                    <a href=""><img src="image/gift.svg" alt=""></a>
+                    <a href=""><img src="image/share.svg" alt=""></a>
+                </div>
+
+            </div>
+
+
+            <div class="section4">
+                <h2 style="left: 165px;">Other Services </h2>
+                <div class="secitm4">
+                    <a href=""><img src="image/Donate.svg" alt=""></a>
+                    <a href=""><img src="image/Home.svg" alt=""></a>
+                    <a href=""><img src="image/savecard.svg" alt=""></a>
+                    <a href=""><img src="image/emi.svg" alt=""></a>
+                    <a href=""><img src="image/apk.svg" alt=""></a>
+                    <a href=""><img src="image/room.svg" alt=""></a>
+                    <a href=""><img src="image/store.svg" alt=""></a>
+                    <a href=""><img src="image/help.svg" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
